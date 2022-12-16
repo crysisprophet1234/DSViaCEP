@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 200%;
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.nav-container {
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  background-color: #ff8400;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  position: sticky;
+
+  & h1 {
+    font-size: 2rem;
+  }
+}
+
+#form-section {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#list-section {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+
+}
+
+.form-black-card {
+  background-color: #333;
+  padding: 1vw;
+  border-radius: 10px;
+
+  & .input-group input {
+    border-radius: 5px;
+    border: 0px;
+    outline: 0px;
+    height: 5vh;
+    width: 30vw;
+    margin: 1.5vh 0px .5vh 0px;
+    text-indent: 10px;
+    font-size: 1.1rem;
+  }
+
+  & .input-group .error-msg {
+
+    color: #d15757;
+    display: none;
+
+  }
+
+  & .btn-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+
+    & button {
+      flex-grow: 1;
+      height: 5.5vh;
+      margin-top: 1.5vh;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      background-color: #ff8400;
+      outline: 0px;
+      border: 0px;
+
+      &:hover {
+        outline: 2px solid black;
+        filter: brightness(105%);
+      }
+    }
+  }
+}
+
+.list-black-card {
+  background-color: #333;
+  padding: 0.5vw;
+  border-radius: 10px;
+  width: 50vw;
+  padding: 0.5% 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &:first-child {
+    margin-top: 4vh;
+  }
+
+  & .estado {
+    color: #ff8400;
+    font-size: 1.2rem;
+  }
+
+  & .logradouro {
+    color: white;
+    font-size: 1rem;
+  }
+
+  & .cep {
+    color: #8f8f8f;
+    font-size: 0.9rem;
+  }
+
+}
